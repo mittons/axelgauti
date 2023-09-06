@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-taum=f39-fu2hg^lf9xdq#$x=jaelrw&y#4$9d^csvw%itr(2j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['axelgauti-31cd6f05346b.herokuapp.com', '127.0.0.1', 'localhost', 'axelgauti.is', 'www.axelgauti.is']
 
 
 # Application definition
