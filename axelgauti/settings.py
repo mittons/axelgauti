@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'axelgauti.middleware.EnforceHttpsMiddleware',
 ]
 
 ROOT_URLCONF = 'axelgauti.urls'
