@@ -1,1 +1,2 @@
-https://chat.openai.com/share/4a4c0316-d393-4c7d-ae07-2e67b84376f7
+ChatGPT - Fill out portfolio section template
+	https://chat.openai.com/share/8e895ea8-fb5a-43e2-b468-3a88c98ac637

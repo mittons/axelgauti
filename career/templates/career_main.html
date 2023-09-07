@@ -20,7 +20,7 @@
 		}
 
 		/* Header styles */
-		header {
+		header.main-header {
 			background-color: #333;
 			color: #fff;
 			text-align: center;
@@ -94,12 +94,56 @@
 				margin: 10px 0;
 			}
 		}
-	</style>
+		
+        /* Project Stylings */
+        .project-category {
+            border-bottom: 2px solid #f0f0f0; /* Adds a bottom border to each category */
+            margin-bottom: 20px; /* Adds some space between categories */
+			padding: 0px; /* Adds some padding to the header section */
+			margin-left: 0px; /* Adds some padding to the header section */
+        }
+
+        .project-category header {
+            padding-left: 10px; /* Adds some padding to the header section */
+            margin-top: 10px; /* Adds some padding to the header section */
+        }
+
+        .project-category h3 {
+            margin: 0; /* Removes the default margin from the h3 tags */
+            font-weight: bold; /* Makes the category titles bold */
+            color: #333; /* Sets a darker color for the category titles */
+        }
+
+        .project-item {
+            padding: 10px; /* Adds some padding around each project */
+        }
+
+        .project-item h4 {
+            margin: 5px 0; /* Adds some margin around the project titles */
+            font-weight: bold; /* Makes the project titles bold */
+            color: #666; /* Sets a color for the project titles */
+        }
+
+        .project-item p {
+            margin: 5px 0; /* Adds some margin around the project descriptions */
+            color: #555; /* Sets a color for the project descriptions */
+        }
+
+        .project-item a {
+            color: #0066cc; /* Sets a color for the links */
+            text-decoration: none; /* Removes the underline from the links */
+        }
+
+        .project-item a:hover {
+            text-decoration: underline; /* Adds underline to links on hover */
+        }
+    </style>
+	
 	
 	
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <h1>Axel Gauti</h1>
         <p>Developer</p>
     </header>
@@ -117,7 +161,6 @@
     </nav>
 
 
-
     <section id="about">
         <h2>About Me</h2>
         <p>Your introduction and background information go here.</p>
@@ -125,9 +168,50 @@
 
 	<section id="portfolio">
 		<h2>Portfolio</h2>
-		<!-- Your portfolio items go here -->
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at nisi nec metus suscipit eleifend. Duis vel suscipit tortor. Nunc vel urna ac ligula feugiat luctus. Vestibulum tristique mauris eu libero pharetra, a scelerisque justo tristique. Sed feugiat ex eget sem volutpat, eu dictum risus elementum.</p>
-		<p>Proin vel convallis odio. Maecenas euismod metus in nibh laoreet, non semper ex tempor. Suspendisse potenti. Quisque nec libero at turpis sollicitudin blandit eu id velit. Praesent eu metus ac tortor ultricies rhoncus.</p>
+		<section class="project-category">
+			<header>
+				<h3>Python Projects</h3>
+			</header>
+			<article class="project-item">
+				<h4>axelgauti.is</h4>
+				<p>Short description of project. Started on 06 September 2023</p>
+				<a href="https://github.com/mittons/axelgauti" target="_blank">GitHub Link</a>
+			</article>
+			<article class="project-item">
+				<h4>telekines.is</h4>
+				<p>Short description of project. Started on 24 August 2023</p>
+				<a href="https://github.com/mittons/telekinesis" target="_blank">GitHub Link</a>
+			</article>
+			
+			<article class="project-item">
+				<h4>Project Euler Programming Problems - Python</h4>
+				<p>Short description of project.</p>
+				<a href="https://github.com/mittons/ProjectEulerPython" target="_blank">GitHub Link</a>
+			</article>
+			
+		</section>
+
+		<section class="project-category">
+			<header>
+				<h3>Java Projects</h3>
+			</header>
+			<article class="project-item">
+				<h4>Rosalind Programming Problems - Java</h4>
+				<p>Short description of project.</p>
+				<a href="https://github.com/mittons/RosalindJava" target="_blank">GitHub Link</a>
+			</article>
+		</section>
+
+		<section class="project-category">
+			<header>
+				<h3>C# Projects</h3>
+			</header>
+			<article class="project-item">
+				<h4>Hodor: Active-Development Work-Breakdown Task-Orgnaization Framework</h4>
+				<p>Short description of project. Started in 2014-2015 and abandoned in 2016</p>
+				<a href="https://github.com/mittons/Hodor" target="_blank">GitHub Link</a>
+			</article>
+		</section>
 	</section>
 
 	<section id="resume">
