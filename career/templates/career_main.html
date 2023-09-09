@@ -33,26 +33,52 @@
 		}
 
 		/* Navigation styles */
-		nav ul {
-			list-style: none;
-			display: flex;
-			justify-content: center;
-			background-color: #444;
-			padding: 10px 0;
-		}
-
-		nav li {
-			margin: 0 20px;
-		}
 
 		nav a {
 			text-decoration: none;
 			color: #fff;
 			font-weight: bold;
 		}
+
+		.sidebar-menu {
+			position: fixed;
+			top: 60px
+			left: 0px; /* Initially shown */
+			width: 150px;
+			height: 100%;
+			max-height: calc(100% - 60px); /* 100% of the viewport height minus the header height */
+			background-color: #333;
+			color: #fff;
+			overflow-y: auto;
+			transition: left 0.3s ease;
+		}
+
+		.sidebar-menu ul {
+			list-style-type: none;
+			padding: 0;
+		}
+
+		.sidebar-menu ul li {
+			display: block;
+			padding: 10px;
+			justify-content: center;
+			background-color: #444;
+			padding: 10px 0;
+		}
+
+		.sidebar-menu ul li a {
+			color: #fff;
+			text-decoration: none;
+		}
 		
-		nav a.active {
+		.sidebar-menu ul li a.active {
 			color: #DAA520;
+		}
+
+		/* Content section styles */
+		#content{
+			margin-left:150px;
+			transition: all 0.3s ease;
 		}
 
 		/* Section styles */
@@ -148,7 +174,7 @@
         <p>Developer</p>
     </header>
 
-    <nav>
+    <nav class="sidebar-menu" id="sidebar-menu">
         <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
@@ -160,103 +186,122 @@
         </ul>
     </nav>
 
+	<div>
+		<main class="content" id="content">
+			<section id="about" class="main-section">
+				<header class="main-section-header">
+					<h2>About Me</h2>
+				</header>
+				
+				<p>Your introduction and background information go here.</p>
+			</section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Your introduction and background information go here.</p>
-    </section>
+			<section id="portfolio" class="main-section">
+				<header class="main-section-header">
+					<h2>Portfolio</h2>
+				</header>
+				
+				<section class="project-category">
+					<header>
+						<h3>Python Projects</h3>
+					</header>
+					<article class="project-item">
+						<h4>axelgauti.is</h4>
+						<p>Short description of project. Started on 06 September 2023</p>
+						<a href="https://github.com/mittons/axelgauti" target="_blank">GitHub Link</a>
+					</article>
+					<article class="project-item">
+						<h4>telekines.is</h4>
+						<p>Short description of project. Started on 24 August 2023</p>
+						<a href="https://github.com/mittons/telekinesis" target="_blank">GitHub Link</a>
+					</article>
+					
+					<article class="project-item">
+						<h4>Project Euler Programming Problems - Python</h4>
+						<p>Short description of project.</p>
+						<a href="https://github.com/mittons/ProjectEulerPython" target="_blank">GitHub Link</a>
+					</article>
+					
+				</section>
 
-	<section id="portfolio">
-		<h2>Portfolio</h2>
-		<section class="project-category">
-			<header>
-				<h3>Python Projects</h3>
-			</header>
-			<article class="project-item">
-				<h4>axelgauti.is</h4>
-				<p>Short description of project. Started on 06 September 2023</p>
-				<a href="https://github.com/mittons/axelgauti" target="_blank">GitHub Link</a>
-			</article>
-			<article class="project-item">
-				<h4>telekines.is</h4>
-				<p>Short description of project. Started on 24 August 2023</p>
-				<a href="https://github.com/mittons/telekinesis" target="_blank">GitHub Link</a>
-			</article>
-			
-			<article class="project-item">
-				<h4>Project Euler Programming Problems - Python</h4>
-				<p>Short description of project.</p>
-				<a href="https://github.com/mittons/ProjectEulerPython" target="_blank">GitHub Link</a>
-			</article>
-			
-		</section>
+				<section class="project-category">
+					<header>
+						<h3>Java Projects</h3>
+					</header>
+					<article class="project-item">
+						<h4>Rosalind Programming Problems - Java</h4>
+						<p>Short description of project.</p>
+						<a href="https://github.com/mittons/RosalindJava" target="_blank">GitHub Link</a>
+					</article>
+				</section>
 
-		<section class="project-category">
-			<header>
-				<h3>Java Projects</h3>
-			</header>
-			<article class="project-item">
-				<h4>Rosalind Programming Problems - Java</h4>
-				<p>Short description of project.</p>
-				<a href="https://github.com/mittons/RosalindJava" target="_blank">GitHub Link</a>
-			</article>
-		</section>
+				<section class="project-category">
+					<header>
+						<h3>C# Projects</h3>
+					</header>
+					<article class="project-item">
+						<h4>Hodor: Active-Development Work-Breakdown Task-Orgnaization Framework</h4>
+						<p>Short description of project. Started in 2014-2015 and abandoned in 2016</p>
+						<a href="https://github.com/mittons/Hodor" target="_blank">GitHub Link</a>
+					</article>
+				</section>
+			</section>
 
-		<section class="project-category">
-			<header>
-				<h3>C# Projects</h3>
-			</header>
-			<article class="project-item">
-				<h4>Hodor: Active-Development Work-Breakdown Task-Orgnaization Framework</h4>
-				<p>Short description of project. Started in 2014-2015 and abandoned in 2016</p>
-				<a href="https://github.com/mittons/Hodor" target="_blank">GitHub Link</a>
-			</article>
-		</section>
-	</section>
+			<section id="resume" class="main-section">
+				<header class="main-section-header">
+					<h2>Resume/CV</h2>
+				</header>
+				<!-- Your resume/CV content goes here -->
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Morbi eget lectus a arcu commodo vestibulum. Sed bibendum ac purus nec elementum. Fusce eget justo ac tortor lacinia dictum.</p>
+				<p>Curabitur ac tristique metus. Sed id quam eu purus mattis vehicula. Nulla ac neque sed libero fermentum vehicula a eget quam. In tincidunt nunc in fringilla.</p>
+			</section>
 
-	<section id="resume">
-		<h2>Resume/CV</h2>
-		<!-- Your resume/CV content goes here -->
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Morbi eget lectus a arcu commodo vestibulum. Sed bibendum ac purus nec elementum. Fusce eget justo ac tortor lacinia dictum.</p>
-		<p>Curabitur ac tristique metus. Sed id quam eu purus mattis vehicula. Nulla ac neque sed libero fermentum vehicula a eget quam. In tincidunt nunc in fringilla.</p>
-	</section>
+			<section id="skills" class="main-section">
+				<header class="main-section-header">
+					<h2>Skills</h2>
+				</header>
+				<!-- Your skills and proficiency go here -->
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus tristique quam, vel ultricies velit iaculis a. Proin nec lorem at ex bibendum finibus nec in nulla.</p>
+				<p>Vivamus vehicula augue id leo bibendum, non cursus libero fermentum. Sed euismod quam in metus elementum, a bibendum tellus fermentum.</p>
+			</section>
 
-	<section id="skills">
-		<h2>Skills</h2>
-		<!-- Your skills and proficiency go here -->
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus tristique quam, vel ultricies velit iaculis a. Proin nec lorem at ex bibendum finibus nec in nulla.</p>
-		<p>Vivamus vehicula augue id leo bibendum, non cursus libero fermentum. Sed euismod quam in metus elementum, a bibendum tellus fermentum.</p>
-	</section>
+			<section id="testimonials" class="main-section">
+				<header class="main-section-header">
+					<h2>Testimonials</h2>
+				</header>	
+				<!-- Testimonials from colleagues, clients, or supervisors go here -->
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida justo in libero suscipit, eget fringilla libero ultrices. Praesent vel dapibus nulla, eu fermentum lectus.</p>
+				<p>Nullam tincidunt est vel odio luctus, non mattis justo pharetra. Quisque eleifend nunc et lacinia. Integer auctor libero id tellus mattis, id tincidunt dolor sodales.</p>
+			</section>
 
-	<section id="testimonials">
-		<h2>Testimonials</h2>
-		<!-- Testimonials from colleagues, clients, or supervisors go here -->
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida justo in libero suscipit, eget fringilla libero ultrices. Praesent vel dapibus nulla, eu fermentum lectus.</p>
-		<p>Nullam tincidunt est vel odio luctus, non mattis justo pharetra. Quisque eleifend nunc et lacinia. Integer auctor libero id tellus mattis, id tincidunt dolor sodales.</p>
-	</section>
+			<section id="blog" class="main-section">
+				<header class="main-section-header">
+					<h2>Blog/Articles</h2>
+				</header>	
+				<!-- Your blog posts or articles go here -->
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu purus ac dui luctus tincidunt. Integer nec nulla a ligula sollicitudin malesuada nec id urna.</p>
+				<p>Phasellus sit amet est eget sapien tristique malesuada. Fusce viverra urna et sem blandit, non dictum libero malesuada.</p>
+			</section>
 
-	<section id="blog">
-		<h2>Blog/Articles</h2>
-		<!-- Your blog posts or articles go here -->
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu purus ac dui luctus tincidunt. Integer nec nulla a ligula sollicitudin malesuada nec id urna.</p>
-		<p>Phasellus sit amet est eget sapien tristique malesuada. Fusce viverra urna et sem blandit, non dictum libero malesuada.</p>
-	</section>
+			<section id="contact" class="main-section">
+				<header class="main-section-header">
+					<h2>Contact</h2>
+				</header>
+				<!-- Contact form or contact details go here -->
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula odio non quam consequat, in dignissim enim facilisis. Sed vel pharetra purus, at cursus dolor.</p>
+				<p>Nulla in urna varius, tincidunt nulla eget, euismod massa. Sed id dui eu odio tristique aliquam ac eget metus.</p>
+			</section>
 
-	<section id="contact">
-		<h2>Contact</h2>
-		<!-- Contact form or contact details go here -->
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula odio non quam consequat, in dignissim enim facilisis. Sed vel pharetra purus, at cursus dolor.</p>
-		<p>Nulla in urna varius, tincidunt nulla eget, euismod massa. Sed id dui eu odio tristique aliquam ac eget metus.</p>
-	</section>
-
-    <footer>
-        <p>&copy; 2023 Axel Gauti</p>
-    </footer>
+			<footer>
+				<p>&copy; 2023 Axel Gauti</p>
+			</footer>
+		</main>
+	</div>
 	
 	<script>
 		// Function to highlight the active navigation link
 		function highlightActiveNavLink() {
-			const sections = document.querySelectorAll('section');
+			const sections = document.querySelectorAll('section.main-section');
 			const navLinks = document.querySelectorAll('nav a');
 
 			sections.forEach((section, index) => {
@@ -277,6 +322,28 @@
 		// "DOMContentLoaded" event listener to highlight active navigation link when the page loads
 		document.addEventListener('DOMContentLoaded', () => {
 			highlightActiveNavLink();
+		});
+		
+		
+		document.addEventListener('DOMContentLoaded', function() {
+			const sidebarMenu = document.getElementById('sidebar-menu');
+			const content = document.getElementById('content');
+			const header = document.querySelector('header.main-header');
+		  
+			window.addEventListener('scroll', function() {
+				let scrollPosition = window.scrollY;
+				let headerHeight = header.offsetHeight;
+				console.log("Scroll: " + scrollPosition + " Header: " + headerHeight)
+				
+				if (scrollPosition > headerHeight) {
+					sidebarMenu.style.top = '0px';
+				} else {
+					sidebarMenu.style.top = `${headerHeight - scrollPosition}px`;
+				}
+				
+				sidebarMenu.style.maxHeight = `calc(100% - ${sidebarMenu.offsetTop}px)`;
+			});
+			
 		});
 	</script>
 </body>

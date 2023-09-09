@@ -1,2 +1,2 @@
-ChatGPT - Fill out portfolio section template
-	https://chat.openai.com/share/8e895ea8-fb5a-43e2-b468-3a88c98ac637
+ChatGPT - Sidebar menu discussion (with hamburger menu discussion that got deprecated)
+	https://chat.openai.com/share/a6399045-4524-4b49-8b8c-a38433dc2c57
