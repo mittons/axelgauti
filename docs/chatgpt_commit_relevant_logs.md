@@ -1,2 +1,2 @@
-ChatGPT - Sidebar menu discussion (with hamburger menu discussion that got deprecated)
-	https://chat.openai.com/share/a6399045-4524-4b49-8b8c-a38433dc2c57
+ChatGPT - Website Active Navigation Highlighting
+	https://chat.openai.com/share/5f1aa21d-00db-47ed-b208-a021c5a34668
