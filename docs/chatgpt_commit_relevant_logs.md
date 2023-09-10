@@ -1,2 +1,2 @@
-ChatGPT - Website Active Navigation Highlighting
-	https://chat.openai.com/share/5f1aa21d-00db-47ed-b208-a021c5a34668
+ChatGPT - Ethics Section Text Review
+	https://chat.openai.com/share/5e095541-747e-4877-819c-fb483253d989
