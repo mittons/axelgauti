@@ -80,7 +80,7 @@
 		.sidebar-gap-filler {
 		   background-color: #333;/* same color as your sidebar menu */;
 		   width: 150px; /* same width as your sidebar menu */;
-		   height: 65px; /* a height slightly more than the gap */;
+		   height: 200px; /* a height slightly more than the gap */;
 		   position: fixed;
 		   top: 0px;/* the bottom position of your header */;
 		   left: 0;
@@ -102,7 +102,7 @@
 		h1, h2 {
 			color: #333;
 		}
-
+		
 		/* Footer styles */
 		footer {
 			background-color: #333;
@@ -133,7 +133,20 @@
 			}
 		}
 		
-        /* Project Stylings */
+		/* Direct main section paragraphs */
+		.main-section > p {
+			margin-left: 15px;
+		}
+		@media (orientation: landscape) {
+			.main-section > p {
+				width: 65%;
+				position: left;
+			}
+		}		
+
+		/* About Me Section Stylings */
+		
+        /* Project Section Stylings */
         .project-category {
             border-bottom: 2px solid #f0f0f0; /* Adds a bottom border to each category */
             margin-bottom: 20px; /* Adds some space between categories */
@@ -175,6 +188,18 @@
         .project-item a:hover {
             text-decoration: underline; /* Adds underline to links on hover */
         }
+		
+		/* Resume Section Stylings */
+		
+		/* Skills Section Stylings */
+		
+		/* Personal Ethics Section Stylings */
+		
+		/* Testimonials Section Stylings */
+
+				
+		/* Contact Section Stylings */
+		
     </style>
 	
 	
@@ -194,8 +219,8 @@
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#resume">Resume</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#personal-ethics">Personal Ethics</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
