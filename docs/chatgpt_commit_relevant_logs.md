@@ -1,2 +1,2 @@
 ChatGPT - Ethics Section Text Review
-	https://chat.openai.com/share/5e095541-747e-4877-819c-fb483253d989
+	https://chat.openai.com/share/c5afaa28-f050-4794-b70c-6d5ef7a51f06
