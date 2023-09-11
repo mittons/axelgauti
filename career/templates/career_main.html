@@ -21,6 +21,7 @@
 
 		/* Header styles */
 		header.main-header {
+			position: relative;
 			background-color: #333;
 			color: #fff;
 			text-align: center;
@@ -84,7 +85,7 @@
 		   position: fixed;
 		   top: 0px;/* the bottom position of your header */;
 		   left: 0;
-		   z-index: 98/* a z-index value that ensures it stays below the sidebar menu but above other elements */;
+		   z-index: 98; /* a z-index value that ensures it stays below the sidebar menu but above other elements */;
 		}
 
 		/* Content section styles */
@@ -193,6 +194,29 @@
 		
 		/* Skills Section Stylings */
 		
+		.skill-category {
+            border-bottom: 2px solid #f0f0f0; /* Adds a bottom border to each category */
+            margin-bottom: 20px; /* Adds some space between categories */
+			padding: 0px;
+			padding-left: 15px;
+			margin-left: 0px;
+        }
+		
+		.skill-category {
+            border-bottom: 2px solid #f0f0f0; /* Adds a bottom border to each category */
+            margin-bottom: 20px; /* Adds some space between categories */
+			padding: 0px;
+			padding-left: 15px;
+			margin-left: 0px;
+        }
+		
+		@media (orientation: landscape) {
+			.skill-category > p {
+				width: 65%;
+				position: left;
+			}
+		}	
+		
 		/* Personal Ethics Section Stylings */
 		
 		/* Testimonials Section Stylings */
@@ -297,11 +321,73 @@
 
 			<section id="skills" class="main-section">
 				<header class="main-section-header">
-					<h2>Skills</h2>
+					<h2>Skills</h2>					
 				</header>
 				<!-- Your skills and proficiency go here -->
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus tristique quam, vel ultricies velit iaculis a. Proin nec lorem at ex bibendum finibus nec in nulla.</p>
-				<p>Vivamus vehicula augue id leo bibendum, non cursus libero fermentum. Sed euismod quam in metus elementum, a bibendum tellus fermentum.</p>
+				<section class="skill-category">
+					<header class="skill-category-header">
+						<h3>Communication skills</h3>
+					</header>
+					<p>{{{Section in active development}}}</p>
+					<p>I am capable of initiating conversations, fostering and nurturing mutual awareness, which is essential for making connections, building relationships and working on mutual projects. In my perspective, any development project or evolving situation necessitates an active and reflective discussion, with the pace of the discussion matching the speed of the development.</p>
+				</section>
+				
+				<section class="skill-category">
+					<header class="skill-category-header">
+						<h3>Collaboration skills</h3>
+					</header>
+					<p>{{{Section in active development}}}</p>
+					<p>{Currently developing this text}</p>
+				</section>
+				
+				<section class="skill-category">
+					<header class="skill-category-header">
+						<h3>Organizational skills</h3>
+					</header>
+					<p>{{{Section in active development}}}</p>
+					<p>I try to stay as organized as I possible, depending on how much time, energy, and/or necessity there is. I'm good at spotting patterns and breaking them down into smaller, more manageable pieces. I can sort things into categories and create bigger groups or subcategorize. When it comes to spatially arranging items or data, I consider how often they're used and how close they are to where they're needed. When I understand the necesstiy for structure I feel highly motivated to organize the environment in question. When the organizational tools, or the training required to use them, aren't available in my environment I will go as far as making my own systems if necessary.</p>
+				</section>
+				
+				<section class="skill-category">
+					<header class="skill-category-header">
+						<h3>Learning skills</h3>
+					</header>
+					<p>{{{Section in active development}}}</p>
+					<p>I can seek the knowledge I need or inquire where to find it. I define concepts, grasp their structure, and use organized approaches to enrich my understanding through experiences that validate or contrast my awareness. I actively embrace this process to build confidence in the knowledge I acquire. To me, successes only validate what I already know, while new experiences and mistakes are the path to further learning.</p>
+				</section>
+				
+				<section class="skill-category">
+					<header class="skill-category-header">
+						<h3>Leadership skills</h3>
+					</header>
+					<p>{{{Section in active development}}}</p>
+					<p>I understand terms and concepts like guidance, consistent support, training and appreciation of hard work. When I commit to a course of action I do so with determination but at the same time I am adept at course correction and reorientation. If I ever took on a leadership role my most preferred leadership style would be servant leadership.</p>
+				</section>
+				
+				<section class="skill-category">
+					<header class="skill-category-header">
+						<h3>Problem solving skills</h3>
+					</header>
+					<p>{{{Section in active development}}}</p>
+					<p>I am proficient at tackling difficult problems, seeking all the pieces of the puzzle and finding the right fit. An early example of this is my performance in the course "Problem Solving" that I took as part of my BSc studies in Computer Science, a course that encouraged and tested general problem solving skills. Out of 131 students I was one of the two students that received the highest possible grade for that course.</p>
+				</section>
+				
+				<section class="skill-category">
+					<header class="skill-category-header">
+						<h3>Development project skills</h3>
+					</header>
+					<p>{{{Section in active development}}}</p>
+					<p>{Currently developing this text}</p>
+				</section>
+				
+				<section class="skill-category">
+					<header class="skill-category-header">
+						<h3>Mastery of skills</h3>
+					</header>
+					<p>{{{Section in active development}}}</p>
+					<p>I consistently seek to build the skills required for the tasks ahead of me, and I highly enjoy the rewards of that effort. I have a strong belief in my capacity and resilience to reach further in any skill while also being able to recognize when my focus on a specific task is misguided, being capable of redirecting my focus to different tasks that refocus my skills.</p>
+				</section>
+				
 			</section>
 			
 			<section id="personal-ethics" class="main-section">
