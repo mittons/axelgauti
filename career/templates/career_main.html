@@ -234,6 +234,38 @@
 			}
 		}	
 		
+		.synopsis {
+			font-weight: strong;
+			font-size: 1em;
+			margin-bottom: 10px;
+		}
+
+		.elaborated-content {
+			font-size: 0.8em;
+			background: linear-gradient(to bottom, grey, white);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			max-height: 100px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			transition: max-height 0.3s ease; /* added a transition for smoother expansion */
+		}
+
+		.elaborated-content.expanded {
+			background: none;
+			-webkit-background-clip: none;
+			-webkit-text-fill-color: initial;
+			color: grey; /* Setting the color to grey when expanded */
+			max-height: none;
+		}
+
+		@media (orientation: landscape) {
+			.elaborated-content > p {
+				width: 65%;
+				position: left;
+			}
+		}	
+		
 		/* Personal Ethics Section Stylings */
 		
 		
@@ -390,57 +422,89 @@
 					<header class="skill-category-header">
 						<h3>Communication skills</h3>
 					</header>
-					<p>I am capable of initiating conversations, fostering and nurturing mutual awareness, which is essential for making connections, building relationships and working on mutual projects. In my perspective, any development project or evolving situation necessitates an active and reflective discussion, with the pace of the discussion matching the speed of the development.</p>
+					<p class="synopsis"><strong>Synopsis:</strong> Expert in initiating and nurturing conversations for collaborative development.</p>
+					<div class="elaborated-content">
+					  <!-- Insert your elaborated content here -->
+						<p><strong>Elboration: </strong>I am capable of initiating conversations, fostering and nurturing mutual awareness, which is essential for making connections, building relationships and working on mutual projects. In my perspective, any development project or evolving situation necessitates an active and reflective discussion, with the pace of the discussion matching the speed of the development.</p>
+					</div>
 				</section>
 				
 				<section class="skill-category">
 					<header class="skill-category-header">
 						<h3>Collaboration skills</h3>
 					</header>
-					<p>{Section in active development}</p>
-					<p>{Currently developing this text}</p>
+					<p class="synopsis"><strong>Synopsis:</strong> Fostering growth through inclusive collaboration and open-minded exploration.</p>
+					<div class="elaborated-content">
+					  <!-- Insert your elaborated content here -->
+						<p><strong>Elboration: </strong>I excel in fostering collaborative environments characterized by knowledge sharing and mutual respect. Leveraging insights from diverse fields such as arts, philosophy, or technology, I nurture a culture where ideas are valued equally and synergies are created. I am particularly open to receiving and incorporating feedback, facilitating growth and understanding within the team. This adaptive and explorative approach not only respects differing viewpoints but encourages venturing into new territories, enhancing what a collective effort can potentially achieve.</p>
+					</div>
 				</section>
 				
 				<section class="skill-category">
 					<header class="skill-category-header">
 						<h3>Organizational skills</h3>
 					</header>
-					<p>I try to stay as organized as I possible, depending on how much time, energy, and/or necessity there is. I'm good at spotting patterns and breaking them down into smaller, more manageable pieces. I can sort things into categories and create bigger groups or subcategorize. When it comes to spatially arranging items or data, I consider how often they're used and how close they are to where they're needed. When I understand the necesstiy for structure I feel highly motivated to organize the environment in question. When the organizational tools, or the training required to use them, aren't available in my environment I will go as far as making my own systems if necessary.</p>
+					<p class="synopsis"><strong>Synopsis:</strong> Efficient at identifying patterns and creating adaptable organizational systems even from scratch.</p>
+					<div class="elaborated-content">
+					  <!-- Insert your elaborated content here -->
+						<p><strong>Elboration: </strong>I try to stay as organized as I can, depending on how much time, energy, and/or necessity there is. I'm good at spotting patterns and breaking them down into smaller, more manageable pieces. I can sort things into categories and create bigger groups or subcategorize. When it comes to spatially arranging items or data, I consider how often they're used and how close they are to where they're needed. When I understand the necesstiy for structure I feel highly motivated to organize the environment in question. When the organizational tools, or the training required to use them, aren't available in my environment I will go as far as making my own systems if necessary.</p>
+					</div>
 				</section>
 				
 				<section class="skill-category">
 					<header class="skill-category-header">
 						<h3>Learning skills</h3>
 					</header>
-					<p>I can seek the knowledge I need or inquire where to find it. I define concepts, grasp their structure, and use organized approaches to enrich my understanding through experiences that validate or contrast my awareness. I actively embrace this process to build confidence in the knowledge I acquire. To me, successes only validate what I already know, while new experiences and mistakes are the path to further learning.</p>
+					<p class="synopsis"><strong>Synopsis:</strong> Actively seeking knowledge, I enhance understanding through structured inquiry and learn from every experience.</p>
+					<div class="elaborated-content">
+					  <!-- Insert your elaborated content here -->
+						<p><strong>Elboration: </strong>I can seek the knowledge I need or inquire where to find it. I define concepts, grasp their structure, and use organized approaches to enrich my understanding through experiences that validate or contrast my awareness. I actively embrace this process to build confidence in the knowledge I acquire. To me, successes only validate what I already know, while new experiences and mistakes are the path to further learning.</p>
+					</div>
 				</section>
 				
 				<section class="skill-category">
 					<header class="skill-category-header">
 						<h3>Leadership skills</h3>
 					</header>
-					<p>I understand terms and concepts like guidance, consistent support, training and appreciation of hard work. When I commit to a course of action I do so with determination but at the same time I am adept at course correction and reorientation. If I ever took on a leadership role my most preferred leadership style would be servant leadership.</p>
+					<p class="synopsis"><strong>Synopsis:</strong> Committed to servant leadership, I offer guidance, adaptability, and appreciation for hard work.</p>
+					<div class="elaborated-content">
+					  <!-- Insert your elaborated content here -->
+						<p><strong>Elboration: </strong>I understand terms and concepts like guidance, consistent support, training and appreciation of hard work. When I commit to a course of action I do so with determination but at the same time I am adept at course correction and reorientation. If I ever took on a leadership role my most preferred leadership style would be servant leadership.</p>
+					</div>
 				</section>
 				
 				<section class="skill-category">
 					<header class="skill-category-header">
 						<h3>Problem solving skills</h3>
 					</header>
-					<p>I am proficient at tackling difficult problems, keenly identifying the various components required to seek the most effective solution. I approach solutions from as many angles as possible, seeking every viewpoint and every stance before settling on a course of action. During the first year my BSc studies in Computer Science, I took a course specifically focused on honing problem-solving abilities where I scored top of the class, an achievement I am proud of. Since then I have been honing my problem solving skills, applying them in various circusmstance and tackling difficult challenges.</p>
+					<p class="synopsis"><strong>Synopsis:</strong> Proficient in holistic problem-solving, employing multiple perspectives to find effective solutions.</p>
+					<div class="elaborated-content">
+					  <!-- Insert your elaborated content here -->
+						<p><strong>Elboration: </strong>I am proficient at tackling difficult problems, keenly identifying the various components required to seek the most effective solution. I approach solutions from as many angles as possible, seeking every viewpoint and every stance before settling on a course of action. During the first year my BSc studies in Computer Science, I took a course specifically focused on honing problem-solving abilities where I scored top of the class, an achievement I am proud of. Since then I have been honing my problem solving skills, applying them in various circusmstance and tackling difficult challenges.</p>
+					</div>
 				</section>
 				
 				<section class="skill-category">
 					<header class="skill-category-header">
 						<h3>Development project skills</h3>
 					</header>
-					<p>I approach development projects with a genuine curiosity and an eagerness to venture into unexplored territories, steadily working towards finding solutions that push the boundaries of what is possible. My forte lies in resource management, where I apply strategies to enhance efficiency without compromising quality. I have cultivated an ability to anticipate potential challenges, which helps in formulating proactive strategies to navigate them seamlessly. This approach is enriched by my diverse interests in areas such as gaming, philosophy, and the arts, fostering a creativity that allows me to bring fresh perspectives and innovative solutions to project settings, contributing to richer and more nuanced project outcomes.</p>
+					<p class="synopsis"><strong>Synopsis:</strong> Curious and innovative project developer with expertise in continuous integration and proactive problem-solving, backed by diverse interests.</p>
+					<div class="elaborated-content">
+					  <!-- Insert your elaborated content here -->
+						<p><strong>Elboration: </strong>I approach development projects with a genuine curiosity and an eagerness to venture into unexplored territories, steadily working towards finding solutions that push the boundaries of what is possible. My forte lies in embracing the principles of continuous integration and continuous development (CI/CD), where I apply methodologies that facilitate seamless transitions between development, testing, and deployment, enhancing efficiency without compromising quality. I have cultivated an ability to anticipate potential challenges, which helps in formulating proactive strategies to navigate them seamlessly. This approach is enriched by my diverse interests in areas such as gaming, philosophy, and the arts, fostering a creativity that allows me to bring fresh perspectives and innovative solutions to project settings, contributing to richer and more nuanced project outcomes.</p>
+					</div>
 				</section>
 				
 				<section class="skill-category">
 					<header class="skill-category-header">
 						<h3>Mastery of skills</h3>
 					</header>
-					<p>I consistently seek to build the skills required for the tasks ahead of me, and I highly enjoy the rewards of that effort. I have a strong belief in my capacity and resilience to reach further in any skill while also being able to recognize when my focus on a specific task is misguided, being capable of redirecting my focus to different tasks that refocus my skills.</p>
+					<p class="synopsis"><strong>Synopsis:</strong> Persistent skill development with adaptive focus and resilience.</p>
+					<div class="elaborated-content">
+					  <!-- Insert your elaborated content here -->
+						<p><strong>Elboration: </strong>I consistently seek to build the skills required for the tasks ahead of me, and I highly enjoy the rewards of that effort. I have a strong belief in my capacity and resilience to reach further in any skill while also being able to recognize when my focus on a specific task is misguided, being capable of redirecting my focus to different tasks that refocus my skills.</p>
+					</div>
+					
 				</section>
 				
 			</section>
@@ -510,7 +574,17 @@
 			highlightActiveNavLink();
 		});
 
-		
+		document.querySelectorAll('.elaborated-content').forEach(function(element) {
+			element.addEventListener('click', function() {
+				if (this.style.maxHeight === '100px' || !this.style.maxHeight) {
+					this.style.maxHeight = 'none';
+					this.classList.add('expanded');
+				} else {
+					this.style.maxHeight = '100px';
+					this.classList.remove('expanded');
+				}
+			});
+		});
 		
 		document.addEventListener('DOMContentLoaded', function() {
 			const sidebarMenu = document.getElementById('sidebar-menu');
