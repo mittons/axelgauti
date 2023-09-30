@@ -88,16 +88,8 @@
 		   z-index: 98; /* a z-index value that ensures it stays below the sidebar menu but above other elements */;
 		}
 
-		/* Content section styles */
-		#content{
-			margin-left:150px;
-			transition: all 0.3s ease;
-		}
 
-		/* Section styles */
-		section {
-			padding: 20px;
-		}
+		
 
 		/* Headings */
 		h1, h2 {
@@ -130,10 +122,30 @@
 			}
 
 			nav li {
-				margin: 10px 0;
+				margin: 0px 0;
 			}
 		}
+
+
+
+		/* Content section styles */
+		#content{
+			margin-left:150px;
+			transition: all 0.3s ease;
+		}
+
 		
+		/* Section styles */
+		section {
+			padding: 20px;
+		}
+		
+		/* Ensure that there is equal spacing between main sections */
+		.main-section section:last-child {
+			margin-bottom: 0px;
+			padding-bottom: 0px;
+		}
+
 		/* Direct main section paragraphs */
 		.main-section > p {
 			margin-left: 20px;
@@ -143,7 +155,9 @@
 				width: 65%;
 				position: left;
 			}
-		}		
+		}
+
+		
 
 		/* About Me Section Stylings */
 		
@@ -152,11 +166,11 @@
             border-bottom: 2px solid #f0f0f0; /* Adds a bottom border to each category */
             margin-bottom: 20px; /* Adds some space between categories */
 			padding: 0px; /* Adds some padding to the header section */
-			margin-left: 0px; /* Adds some padding to the header section */
+			margin-left: 20px; /* Adds some padding to the header section */
         }
 
         .project-category header {
-            padding-left: 10px; /* Adds some padding to the header section */
+            padding-left: 0px; /* Adds some padding to the header section */
             margin-top: 10px; /* Adds some padding to the header section */
         }
 
@@ -168,6 +182,7 @@
 
         .project-item {
             padding: 10px; /* Adds some padding around each project */
+            padding-left: 0px; /* Adds some padding around each project */
         }
 
         .project-item h4 {
@@ -215,16 +230,8 @@
             border-bottom: 2px solid #f0f0f0; /* Adds a bottom border to each category */
             margin-bottom: 20px; /* Adds some space between categories */
 			padding: 0px;
-			padding-left: 15px;
-			margin-left: 0px;
-        }
-		
-		.skill-category {
-            border-bottom: 2px solid #f0f0f0; /* Adds a bottom border to each category */
-            margin-bottom: 20px; /* Adds some space between categories */
-			padding: 0px;
-			padding-left: 15px;
-			margin-left: 0px;
+			padding-left: 0px;
+			margin-left: 20px;
         }
 		
 		@media (orientation: landscape) {
@@ -309,17 +316,18 @@
 					<h2>About Me</h2>
 				</header>
 				
-				<p>Hello! I am a seasoned professional with a background in Computer Science, well-equipped with a diverse skill set that includes communication, collaboration, and leadership. My approach to my career is characterized by a perpetual eagerness to learn and grow. I firmly believe in adapting and evolving through new experiences, viewing every hurdle as an opportunity for further learning and personal growth.</p>
+				<p>Hello! I am a confident professional with a background in Computer Science, well-equipped with a diverse skill set that includes communication, collaboration, and leadership. My approach to my career is characterized by a perpetual eagerness to learn and grow. I firmly believe in adapting and evolving through new experiences, viewing every hurdle as an opportunity for further learning and personal growth.</p>
 				<br>
 				<p>Outside the professional arena, I am a spirited individual with a penchant for creativity and exploration. I immerse myself in various crafting projects, with a current focus on writing and cross-stitching. My love for the arts extends to playing the piano and delving into the vibrant and expressive world of dance, where each movement tells a story. A true explorer at heart, I cherish delving into the physical and virtual worlds, whether it's appreciating the beauty of nature, engaging in gaming, or pondering over philosophical discourses on human nature and ethics.</p>
 				<br>
-				<p>I am deeply committed to fostering environments grounded in fairness, transparency, and inclusivity, where diversity is not only acknowledged but celebrated. As I navigate the tech industry, my objective is to contribute meaningfully to projects that resonate with my values, collaborating with like-minded individuals to craft a more inclusive and innovative future.</p>
+				<p>I am deeply committed to fostering environments grounded in fairness, transparency, and inclusivity, where diversity is not only acknowledged but celebrated. As I navigate the tech industry, my objective is to contribute meaningfully to projects that resonate with my values, collaborating with like-minded individuals to craft a more ethical and innovative future.</p>
 			</section>
 
 			<section id="portfolio" class="main-section">
 				<header class="main-section-header">
 					<h2>Portfolio</h2>
 				</header>
+				<p>In this section I showcase projects that demonstrate where I have honed my practical programming and development skills</p>
 				
 				<section class="project-category">
 					<header>
@@ -372,7 +380,8 @@
 					<h2>Resume/CV</h2>
 				</header>
 				<!-- Your resume/CV content goes here -->
-				<p><a href="https://axelgauti-files.s3.eu-north-1.amazonaws.com/Axel+Gauti+CV+-+Eng+-+Lead.pdf"><strong>Curriculum Vitae - 2023.09.12</strong></a></p>
+				<p><a href="https://axelgauti-files.s3.eu-north-1.amazonaws.com/Axel+Gauti+CV+-+EN.pdf"><strong>Curriculum Vitae - English - 2023.09.30</strong></a></p>
+				<p><a href="https://axelgauti-files.s3.eu-north-1.amazonaws.com/Axel+Gauti+CV+-+IS.pdf"><strong>Curriculum Vitae - Icelandic - 2023.09.30</strong></a></p>
 			</section>
 			
 			<section id="academic-achievements" class="main-section">
@@ -409,10 +418,11 @@
 				<!-- Testimonials from colleagues, clients, or supervisors go here -->
 				<!-- Testimonial 1 -->
 				<section class="testimonial-item">
-				<h4><a href="https://axelgauti-files.s3.eu-north-1.amazonaws.com/confirmationLetter.0.5.pdf">HSN - Statement of Work</a></h4>
+					<h4>HSN - Statement of Work - <a href="https://axelgauti-files.s3.eu-north-1.amazonaws.com/ConfirmationLetter+-+EN.pdf">English</a> | <a href="https://axelgauti-files.s3.eu-north-1.amazonaws.com/ConfirmationLetter+-+IS.pdf">Icelandic</a></h4>
 					<p><strong>Name:</strong> Þórhallur Harðason</p>
 					<p><strong>Position:</strong> Chief Financial Officer</p>
 					<p><strong>Statement given on:</strong> September 2023</p>
+					<p><strong>Period of work:</strong> 2018-2021</p>
 				</section>
 				
 			</section>
@@ -421,6 +431,9 @@
 				<header class="main-section-header">
 					<h2>Skills</h2>					
 				</header>
+				
+				<p>In this section I reflect on the soft skills that I have aquired</p>
+				
 				<!-- Your skills and proficiency go here -->
 				<section class="skill-category">
 					<header class="skill-category-header">
@@ -470,10 +483,10 @@
 					<header class="skill-category-header">
 						<h3>Leadership skills</h3>
 					</header>
-					<p class="synopsis"><strong>Synopsis:</strong> Committed to servant leadership, I offer guidance, adaptability, and appreciation for hard work.</p>
+					<p class="synopsis"><strong>Synopsis:</strong> Embracing responsibility as service, I offer guidance, adaptability, and appreciation for hard work.</p>
 					<div class="elaborated-content">
 					  <!-- Insert your elaborated content here -->
-						<p><strong>Elboration: </strong>I understand terms and concepts like guidance, consistent support, training and appreciation of hard work. When I commit to a course of action I do so with determination but at the same time I am adept at course correction and reorientation. If I ever took on a leadership role my most preferred leadership style would be servant leadership.</p>
+						<p><strong>Elboration: </strong>I view all roles of responsibility as a service, whether it's a managerial role or a frontline position. I understand terms and concepts like guidance, consistent support, training and appreciation of hard work. When I commit to a course of action I do so with determination but at the same time I am adept at course correction and reorientation.</p>
 					</div>
 				</section>
 				
