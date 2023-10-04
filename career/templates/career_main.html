@@ -89,7 +89,26 @@
 		}
 
 
+		/* Content section styles */
+		#content{
+			margin-left:150px;
+		}
 		
+		
+		/* Responsive design */
+		@media (max-width: 768px) and (orientation: portrait) {
+			.sidebar-menu {
+				width:0px;
+			}
+			
+			.sidebar-gap-filler {
+				width:0px;
+			}
+			
+			#content{
+				margin-left:0px;
+			}
+		}		
 
 		/* Headings */
 		h1, h2 {
@@ -115,26 +134,7 @@
 			color: #0056b3;
 		}
 
-		/* Responsive design */
-		@media (max-width: 768px) {
-			nav ul {
-				flex-direction: column;
-			}
 
-			nav li {
-				margin: 0px 0;
-			}
-		}
-
-
-
-		/* Content section styles */
-		#content{
-			margin-left:150px;
-			transition: all 0.3s ease;
-		}
-
-		
 		/* Section styles */
 		section {
 			padding: 20px;
@@ -526,9 +526,6 @@
 				
 			</section>
 
-
-				
-			
 			<section id="personal-ethics" class="main-section">
 				<header class="main-section-header">
 					<h2>Personal Ethics</h2>
@@ -540,8 +537,6 @@
 				<br>
 				<p>I am confident in my readiness to communicate openly, fostering collaboration and mutual understanding. I am dedicated to navigating the complexities of decision-making with empathy and a willingness to adapt, ensuring that the repercussions of my actions are always considered and that I remain accountable to the communities and individuals I serve.</p>
 			</section>
-
-
 
 			<section id="contact" class="main-section">
 				<header class="main-section-header">
